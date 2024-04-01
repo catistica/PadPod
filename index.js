@@ -1,5 +1,5 @@
 //parametrización
-let m = 62 /*módulo 57*/ 
+let m = 61 /*módulo 57*/ 
 let miti = m/2
 //let m
 //let miti
