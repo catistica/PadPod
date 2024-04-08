@@ -60,7 +60,7 @@ function preload() {
 
   tipo = loadFont('tipo/MuseoModerno-Black.ttf')
 
-  titulo = loadImage('img/titulo.png')
+  titulo = loadImage('img/titulo.jpg')
   flor = loadImage('img/flor.png')
   gradient = loadImage('img/gradient.png')
   flechaAbajoBlanca = loadImage('img/flechaAbajoBlanca.png')
