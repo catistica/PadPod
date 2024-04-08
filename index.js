@@ -1,5 +1,5 @@
 //parametrización
-let m = 62 /*módulo 57*/ 
+let m 
 let miti = m/2
 //let m
 //let miti
@@ -89,7 +89,7 @@ function preload() {
 }
 
 function setup() {
- 
+  m = windowWidth/24
   
   //createCanvas(windowWidth,windowHeight)
   createCanvas(24*m, 13*m)
