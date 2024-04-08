@@ -120,7 +120,7 @@ function setup() {
 function draw() {
   //let m = windowWidth/24
   //let miti = windowWidth/13
-
+  
   background(232,214,189)
 
   /*bajo*/
@@ -429,14 +429,14 @@ function draw() {
   if(shakers.isPlaying()){
     push()
     frameRate(10)
-    circulosRandom(4*m, m/miti)
+    circulosRandom(4*m, m/40)
     pop()
   } else {
     push()
     for (let x = 5.07*m; x < 6.95*m; x=x+5) {
       for (let y = 1.07*m; y < 3.95*m; y=y+5) {
         fill(0)
-        ellipse (x, y, m/miti)
+        ellipse (x, y, m/40)
         }
       }
     } 
