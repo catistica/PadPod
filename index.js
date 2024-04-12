@@ -1,6 +1,6 @@
 //parametrización
 let m 
-let miti = m/2
+let miti
 //let m
 //let miti
 
@@ -90,6 +90,7 @@ function preload() {
 
 function setup() {
   m = windowWidth/24
+  miti = m/2
   
   //createCanvas(windowWidth,windowHeight)
   createCanvas(24*m, 13*m)
@@ -239,7 +240,7 @@ function draw() {
         for(y = 4*m; y<8*m; y = y + miti) {
           push()
           fill(89,126,255)
-          ellipse(x, y, miti)
+          ellipse(x, y, m/2)
           pop()
         }
       }
@@ -473,61 +474,12 @@ function draw() {
   push()
   fill(232,214,189) 
   textAlign(RIGHT);
-  text("by Catalina Pastorino", 20.5*m, 0.22*m, 3*m, 2*m)
-  text("and Lucía Belén Rovasio Aguirre", 20.5*m, 0.48*m, 3*m, 2*m)
+  textSize(0.2*m);
+  text("by Catalina Pastorino", m, 0.22*m, 22.5*m, 2*m)
+  text("and Lucía Belén Rovasio Aguirre", m, 0.48*m, 22.5*m, 2*m)
   pop()
-
-  /*Previa*/
-  
- // Previa ()
-  /*push()
-  fill(0,150)
-  rect(0, 0, 24*m, 13*m)
-  
-  fill(203,148,226)
-  rect(5*m, 3.5*m, 14*m, 7.5*m)
-
-  fill(232,214,189)
-  rect(5.5*m, 4*m, 13*m, 6.5*m)
-
-  fill(0)
-  textSize(0.95*m)
-  textFont(FontMuseoModerno)
-  text('Bienvenidos a PAD POD', 6.2*m, 4.5*m, 13*m, 7*m)
-  //image(bienvenida, 6*m, 4.5*m, 9.5*m, m)
-
-  textFont(FontInter)
-  textSize(0.35*m)
-  text(parrafoIntro, 6.2*m, 6*m, 10*m, 7*m)
-
-  pop() */
   
 }
-
-/*function Previa() {
-  push()
-  fill(0,150)
-  rect(0, 0, 24*m, 13*m)
-  
-  fill(203,148,226)
-  rect(5*m, 3.5*m, 14*m, 7.5*m)
-
-  fill(232,214,189)
-  rect(5.5*m, 4*m, 13*m, 6.5*m)
-
-  fill(0)
-  textSize(0.95*m)
-  textFont(FontMuseoModerno)
-  text('Bienvenidos a PAD POD', 6.2*m, 4.5*m, 13*m, 7*m)
-  //image(bienvenida, 6*m, 4.5*m, 9.5*m, m)
-
-  textFont(FontInter)
-  textSize(0.35*m)
-  text(parrafoIntro, 6.2*m, 6*m, 10*m, 7*m)
-
-  pop()
-
-}*/
 
 function mouseClicked() {
   
