@@ -466,14 +466,15 @@ function draw() {
   push()
   let wvolg = map(volgeneral, 0, 1, 0,24*m)
   fill(247,101,50)
-  rect(5*m, 0, wvolg, m)
+  rect(4.9*m, 0, wvolg, m)
   pop()
 
   /* leyenda*/ 
   push()
   fill(232,214,189) 
-  text("by Catalina Pastorino", 21.5*m, 0.22*m, 2.5*m, 2*m)
-  text("and Lucía Belén Rovasio Aguirre", 20.4*m, 0.5*m, 4*m, 3*m)
+  textAlign(RIGHT);
+  text("by Catalina Pastorino", 20.5*m, 0.22*m, 3*m, 2*m)
+  text("and Lucía Belén Rovasio Aguirre", 20.5*m, 0.48*m, 3*m, 2*m)
   pop()
 
   /*Previa*/
